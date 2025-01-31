@@ -108,17 +108,6 @@ async function displayUserStats(accessToken) {
   const recentlyPlayed = await getRecentlyPlayed(accessToken);
 
   const favoriteAlbums = await findFavoriteAlbums(topTracks, accessToken);
-
-  console.log('User Data:', userData);
-  console.log('Top Tracks:', topTracks);
-  console.log('Top Artists:', topArtists);
-  console.log('Recently Played:', recentlyPlayed);
-
-  // Log the data to verify structure
-  console.log('Top Tracks Items:', topTracks);
-  console.log('Top Artists Items:', topArtists);
-  console.log('Favorite Albums:', favoriteAlbums);
-
   displayList('topTracks', topTracks, 'track');
   displayList('topArtists', topArtists, 'artist');
   displayList('topAlbums', favoriteAlbums, 'album');
