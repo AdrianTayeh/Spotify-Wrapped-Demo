@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const clientId = '219f4a3278264f6caef3d374c64c54a5';
-const redirectUri = 'http://localhost:5173/callback';
+const redirectUri = 'https://spotify-wrapped-demo.netlify.app/callback';
 const scopes = [
     'user-read-private',
     'user-read-email',
