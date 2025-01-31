@@ -159,6 +159,9 @@ function displayList(containerId, items, type) {
   });
 }
 
-// Call displayUserStats with the access token
-const accessToken = await getRefreshToken();
-displayUserStats(accessToken);
+async function init() {
+  const accessToken = await getRefreshToken();
+  displayUserStats(accessToken);
+}
+
+init();
